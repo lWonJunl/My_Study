@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <h1 id="text">0</h1>
+        <button onclick="increase()">증가</button>
+        <button onclick="decrease()">감소</button>
+
+        <script>
+            let num = 0;
+
+            function increase(){
+                num += 1;
+                document.getElementById("text").innerText = num;
+            }
+
+            function decrease(){
+                if(num>0){
+                    num -= 1;
+                }
+                document.getElementById("text").innerText = num;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <h1 id="text">OFF</h1>
+        <button onclick="toggleText()">토글</button>
+
+        <script>
+            let state = false;
+
+            function toggleText(){
+                if(state === false){
+                    document.getElementById("text").innerText = "ON";
+                    state = true;
+                } else {
+                    document.getElementById("text").innerText = "OFF";
+                    state = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

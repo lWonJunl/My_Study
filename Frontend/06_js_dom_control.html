@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id="text">Hello</h1>
+        <button onclick="changeColor()">색 변경</button>
+        <button onclick="changeDisplay()">보이기/숨기기</button>
+
+        <script>
+            let color = "red";
+            let display = true;
+
+            function changeColor(){
+                if(color === "red"){
+                    document.getElementById("text").style.color = "blue";
+                    color = "blue";
+                }
+                else{
+                    document.getElementById("text").style.color = "red";
+                    color = "red";
+                }
+            }
+
+            function changeDisplay(){
+                if(display == true){
+                    document.getElementById("text").style.display = "none";
+                    display = false;
+                }
+                else{
+                    document.getElementById("text").style.display = "block";
+                    display = true;
+                }
+            }
+        </script>
+    </body>
+</html>

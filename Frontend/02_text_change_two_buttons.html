@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id="text">시작</h1>
+        <button onclick="changeText('안녕')">바꾸기1</button>
+        <button onclick="changeText('반가워')">바꾸기2</button>
+
+        <script>
+            function changeText(msg){
+            document.getElementById("text").innerText = msg;
+        }
+        </script>
+    </body>
+</html>
