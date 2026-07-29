@@ -1,4 +1,4 @@
-public class VariablesPractice {
+public class Java02VariablesPractice {
     public static void main(String[] args) {
         String name = "원준";
         System.out.println("이름: " + name);

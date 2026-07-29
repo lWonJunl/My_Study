@@ -1,4 +1,4 @@
-public class StudyTime {
+public class Java03StudyTime {
         public static void main(String[] args) {
         int JavaTime = 40;
         int JsTime = 60;
