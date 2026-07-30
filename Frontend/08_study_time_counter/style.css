@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.counter-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
