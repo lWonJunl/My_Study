@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>공부 시간 카운터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="counter-container">
+        <h1>공부 시간 카운터</h1>
+
+        <p id="studyTime">현재 공부 시간: 0분</p>
+
+        <label for="minuteInput">추가할 시간</label>
+        <input
+            type="number"
+            id="minuteInput"
+            min="1"
+            placeholder="분 단위로 입력"
+        >
+
+        <button id="customAddButton">입력 시간 추가</button>
+
+        <p id="message"></p>
+
+        <button id="addButton">10분 추가</button>
+        <button id="resetButton">초기화</button>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
