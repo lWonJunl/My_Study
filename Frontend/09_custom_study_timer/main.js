@@ -19,9 +19,11 @@ addButton.addEventListener("click", () => {
 resetButton.addEventListener("click", () => {
     time = 0;
     updateStudyTime();
+    message.innerText = "";
+    minuteInput.value = "";
 });
 
-customAddButton.addEventListener("click", () => {
+function addCustomTime() {
     if (minuteInput.value === "") {
         message.innerText = "시간을 입력하세요.";
         return;
@@ -43,4 +45,15 @@ customAddButton.addEventListener("click", () => {
     updateStudyTime();
     message.innerText = "";
     minuteInput.value = "";
+    
+}
+
+customAddButton.addEventListener("click", () => {
+    addCustomTime();
+});
+
+minuteInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter"){
+        addCustomTime();
+    }
 });

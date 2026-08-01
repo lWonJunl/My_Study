@@ -13,14 +13,13 @@ public class Java06ClassObject{
         student2.printInfo();
 
     }
-}
 
-class Student{
-    String name;
-    int score;
+    static class Student{
+        String name;
+        int score;
 
-    void printInfo() {
-        System.out.println("이름: " + name + ", 점수: " + score);
+        void printInfo() {
+            System.out.println("이름: " + name + ", 점수: " + score);
+        }
     }
 }
-
