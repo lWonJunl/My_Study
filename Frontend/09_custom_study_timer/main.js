@@ -5,10 +5,19 @@ const minuteInput = document.querySelector("#minuteInput");
 const customAddButton = document.querySelector("#customAddButton");
 const message = document.querySelector("#message");
 
-let time = 0;
+const savedTime = localStorage.getItem("studyTime");
+let time;
+
+if (savedTime === null) {
+    time = 0;
+} else {
+    time = Number(savedTime);
+}
+updateStudyTime();
 
 function updateStudyTime() {
     studyTime.innerText = "현재 공부 시간: " + time + "분";
+    localStorage.setItem("studyTime", time);
 }
 
 addButton.addEventListener("click", () => {
