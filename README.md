@@ -8,9 +8,9 @@
 | --- | --- |
 | C | 기본 입출력, 산술 연산, 조건문, 백준 문제 풀이 |
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
-| Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자 |
-| Frontend | HTML/CSS 기초, JavaScript, DOM 조작, 이벤트와 입력값 처리 |
-| Database | SQL 데이터 조회, 조건 검색, 정렬, CRUD, 집계 함수 |
+| Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자, 캡슐화 |
+| Frontend | HTML/CSS, JavaScript, DOM, 이벤트, 입력값 처리, 로컬 저장소 |
+| Database | SQL 조회, CRUD, 집계 함수, 그룹화와 그룹 조건 |
 
 ## 저장소 구조
 
@@ -50,6 +50,8 @@ my-study/
 | `Java05ArrayMethod.java` | 정수 배열을 메서드에 전달하여 합계 계산하기 |
 | `Java06ClassObject.java` | 중첩 `Student` 클래스와 객체를 만들고 필드와 메서드 사용하기 |
 | `Java07Constructor.java` | 생성자로 객체의 이름과 점수를 초기화하기 |
+| `Java08This.java` | `this`로 인스턴스 필드와 생성자 매개변수 구분하기 |
+| `Java09Encapsulation.java` | `private` 필드와 getter·setter를 사용한 캡슐화 및 점수 검증 |
 
 ## Frontend
 
@@ -63,7 +65,7 @@ my-study/
 | `06_js_dom_control.html` | DOM 요소의 색상과 표시 상태 제어 |
 | `07_css_basic.html` | 선택자, 여백, 테두리와 기본 레이아웃 |
 | `08_study_time_counter/` | 이벤트 리스너와 CSS를 활용한 10분 단위 공부 시간 카운터 |
-| `09_custom_study_timer/` | 입력값 검증, Enter 키 입력, 초기화 기능을 갖춘 사용자 지정 공부 시간 카운터 |
+| `09_custom_study_timer/` | 입력값 검증, Enter 키 입력과 `localStorage` 저장을 지원하는 사용자 지정 타이머 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -74,14 +76,16 @@ my-study/
 | `01_SelectWhere.sql` | `SELECT`와 `WHERE`로 데이터를 조회하고 `ORDER BY`로 오름차순·내림차순 정렬하기 |
 | `02_InsertUpdateDelete.sql` | `INSERT`, `UPDATE`, `DELETE`로 데이터 추가·수정·삭제하기 |
 | `03_AggregateFunctions.sql` | `COUNT`, `SUM`, `AVG`로 전체 또는 조건별 학생 수·합계·평균 구하기 |
+| `04_GroupBy.sql` | `GROUP BY`와 집계 함수로 전공별 학생 수·평균·최고 점수 구하기 |
+| `05_Having.sql` | `WHERE`와 `HAVING`으로 행과 그룹에 각각 조건 적용하기 |
 
 ## 학습 목표
 
-- C와 Python의 기본 문법 및 Java 객체 지향 기초 익히기
+- C와 Python의 기본 문법 및 Java 클래스·객체·캡슐화 익히기
 - 알고리즘 문제 풀이를 통해 문제 해결 능력 기르기
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
 - DOM 조작과 이벤트 처리로 동적인 웹 페이지 구현하기
-- SQL을 활용해 데이터를 조회·검색·정렬하고 CRUD와 집계 함수 익히기
+- SQL을 활용해 CRUD와 집계 함수를 익히고 데이터를 그룹별로 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
 > 학습 내용이 늘어날 때마다 예제와 문서를 함께 업데이트합니다.

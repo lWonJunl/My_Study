@@ -15,9 +15,17 @@ if (savedTime === null) {
 }
 updateStudyTime();
 
-function updateStudyTime() {
+function displayStudyTime() {
     studyTime.innerText = "현재 공부 시간: " + time + "분";
+}
+
+function saveStudyTime() {
     localStorage.setItem("studyTime", time);
+}
+
+function updateStudyTime() {
+    displayStudyTime();
+    saveStudyTime();
 }
 
 addButton.addEventListener("click", () => {
@@ -27,7 +35,8 @@ addButton.addEventListener("click", () => {
 
 resetButton.addEventListener("click", () => {
     time = 0;
-    updateStudyTime();
+    displayStudyTime();
+    localStorage.removeItem("studyTime");
     message.innerText = "";
     minuteInput.value = "";
 });
