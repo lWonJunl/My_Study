@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.profile-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 320px;
+    padding: 24px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.profile-card header p {
+    color: #555555;
+}
+
+.skills {
+    margin-bottom: 24px;
+}
+
+.skills ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.skills li{
+    background-color: #eeeeee;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
