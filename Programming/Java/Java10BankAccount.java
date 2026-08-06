@@ -14,7 +14,7 @@ public class Java10BankAccount {
         private int balance;
 
         BankAccount(String owner, int balance) {
-            this.owner = owner;
+            setOwner(owner);
             this.balance = balance;
         }
 
@@ -35,6 +35,12 @@ public class Java10BankAccount {
         void withdraw(int amount) {
             if (amount>0 && amount <= this.balance) {
                 this.balance -= amount;
+            }
+        }
+
+        void setOwner(String owner) {
+            if (owner != null && !owner.isEmpty()) {
+                this.owner = owner;
             }
         }
         
