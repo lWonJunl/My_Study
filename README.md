@@ -9,8 +9,13 @@
 | C | 기본 입출력, 산술 연산, 조건문, 백준 문제 풀이 |
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
 | Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자, 캡슐화 |
-| Frontend | 시맨틱 HTML, CSS 레이아웃, JavaScript, DOM, 이벤트, 로컬 저장소 |
-| Database | SQL 조회, CRUD, 집계와 그룹화, 테이블 조인 |
+| Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 로컬 저장소 |
+| Database | SQL 조회, CRUD, 집계와 그룹화, 내부·외부 조인 |
+
+## 최근 학습
+
+- [SQL 조인·집계 복습](Database/SQL/08_JoinAggregateReview.sql): `LEFT JOIN`으로 전공과 학생을 연결하고 `GROUP BY`·`COUNT`·`AVG`·`HAVING`을 조합해 전공별 통계를 구했습니다.
+- [학습 상태 카드](Frontend/11_status_card/index.html): 반응형 카드 UI에서 버튼 이벤트로 진행 상태를 바꾸고 `localStorage`에 저장하도록 구현했습니다.
 
 ## 저장소 구조
 
@@ -52,7 +57,8 @@ my-study/
 | `Java07Constructor.java` | 생성자로 객체의 이름과 점수를 초기화하기 |
 | `Java08This.java` | `this`로 인스턴스 필드와 생성자 매개변수 구분하기 |
 | `Java09Encapsulation.java` | `private` 필드와 getter·setter를 사용한 캡슐화 및 점수 검증 |
-| `Java10BankAccount.java` | 캡슐화된 은행 계좌 객체의 입금·출금과 잔액 검증 구현하기 |
+| `Java10BankAccount.java` | 캡슐화된 은행 계좌 객체의 소유자 검증과 입금·출금 구현하기 |
+| `Java11StudentScore.java` | getter·setter로 학생 정보를 조회하고 0~100 범위의 점수만 반영하기 |
 
 ## Frontend
 
@@ -67,7 +73,8 @@ my-study/
 | `07_css_basic.html` | 선택자, 여백, 테두리와 기본 레이아웃 |
 | `08_study_time_counter/` | 이벤트 리스너와 CSS를 활용한 10분 단위 공부 시간 카운터 |
 | `09_custom_study_timer/` | 입력값 검증, Enter 키 입력과 `localStorage` 저장을 지원하는 사용자 지정 타이머 |
-| `10_profile_card/` | 시맨틱 HTML과 Flexbox, 카드 스타일을 활용한 프로필 카드 |
+| `10_profile_card/` | 시맨틱 HTML, Flexbox와 미디어 쿼리를 활용한 반응형 프로필 카드 |
+| `11_status_card/` | 버튼으로 학습 상태를 변경하고 `localStorage`에 저장하는 반응형 상태 카드 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -81,14 +88,16 @@ my-study/
 | `04_GroupBy.sql` | `GROUP BY`와 집계 함수로 전공별 학생 수·평균·최고 점수 구하기 |
 | `05_Having.sql` | `WHERE`와 `HAVING`으로 행과 그룹에 각각 조건 적용하기 |
 | `06_InnerJoin.sql` | `INNER JOIN`으로 학생과 전공 테이블을 연결하고 조건에 맞는 데이터 조회하기 |
+| `07_LeftJoin.sql` | `LEFT JOIN`으로 학생이 없는 전공까지 조회하고 전공별 학생 수 집계하기 |
+| `08_JoinAggregateReview.sql` | `LEFT JOIN`, `GROUP BY`, `HAVING`으로 전공별 학생 수와 평균 점수 분석하기 |
 
 ## 학습 목표
 
 - C와 Python의 기본 문법 및 Java 클래스·객체·캡슐화 익히기
 - 알고리즘 문제 풀이를 통해 문제 해결 능력 기르기
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
-- 시맨틱 마크업과 CSS 레이아웃을 익히고 동적인 웹 페이지 구현하기
-- SQL을 활용해 데이터를 그룹별로 분석하고 여러 테이블 연결하기
+- 시맨틱 마크업과 반응형 CSS를 익히고 상태를 저장하는 동적 웹 페이지 구현하기
+- SQL 조인과 집계 함수를 조합해 여러 테이블의 데이터를 그룹별로 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
 > 학습 내용이 늘어날 때마다 예제와 문서를 함께 업데이트합니다.
