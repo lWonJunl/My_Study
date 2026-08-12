@@ -1,6 +1,6 @@
 # My Study
 
-프로그래밍 기초, 프론트엔드 개발, 데이터베이스를 공부하며 작성한 예제와 문제 풀이를 기록하는 개인 학습 저장소입니다.
+프로그래밍 기초, 프론트엔드와 백엔드 개발, 데이터베이스를 공부하며 작성한 예제와 문제 풀이를 기록하는 개인 학습 저장소입니다.
 
 ## 학습 내용
 
@@ -10,12 +10,13 @@
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
 | Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자, 캡슐화 |
 | Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 로컬 저장소 |
+| Backend | Node.js 실행, 명령줄 인자, 입력값 검증, 내장 모듈 |
 | Database | SQL 조회, CRUD, 집계와 그룹화, 내부·외부 조인 |
 
 ## 최근 학습
 
-- [SQL 조인·집계 복습](Database/SQL/08_JoinAggregateReview.sql): `LEFT JOIN`으로 전공과 학생을 연결하고 `GROUP BY`·`COUNT`·`AVG`·`HAVING`을 조합해 전공별 통계를 구했습니다.
-- [학습 상태 카드](Frontend/11_status_card/index.html): 반응형 카드 UI에서 버튼 이벤트로 진행 상태를 바꾸고 `localStorage`에 저장하도록 구현했습니다.
+- [Node.js 기초](Backend/NodeJS/01_basics.js): 명령줄 인자를 검증해 인사와 숫자 합계를 출력하고 `os` 모듈로 시스템 정보를 확인했습니다.
+- [SQL LEFT JOIN 복습](Database/SQL/09_LeftJoinReview.sql): 모든 전공을 기준으로 학생 수와 평균 점수를 집계했습니다.
 
 ## 저장소 구조
 
@@ -26,6 +27,8 @@ my-study/
 │   ├── Python/     # Python 예제 및 백준 문제 풀이
 │   └── Java/       # Java 기초 문법 실습
 ├── Frontend/       # HTML, CSS, JavaScript 실습
+├── Backend/
+│   └── NodeJS/     # Node.js 기초 실습
 ├── Database/
 │   └── SQL/        # SQL 기초 실습
 └── README.md
@@ -78,6 +81,12 @@ my-study/
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
+## Backend
+
+| 파일 | 학습 주제 |
+| --- | --- |
+| `01_basics.js` | Node.js 출력, 명령줄 인자 처리, 숫자 검증과 `os` 내장 모듈 사용하기 |
+
 ## Database
 
 | 파일 | 학습 주제 |
@@ -90,6 +99,7 @@ my-study/
 | `06_InnerJoin.sql` | `INNER JOIN`으로 학생과 전공 테이블을 연결하고 조건에 맞는 데이터 조회하기 |
 | `07_LeftJoin.sql` | `LEFT JOIN`으로 학생이 없는 전공까지 조회하고 전공별 학생 수 집계하기 |
 | `08_JoinAggregateReview.sql` | `LEFT JOIN`, `GROUP BY`, `HAVING`으로 전공별 학생 수와 평균 점수 분석하기 |
+| `09_LeftJoinReview.sql` | 모든 전공을 기준으로 학생 수와 평균 점수 집계하기 |
 
 ## 학습 목표
 
@@ -97,6 +107,7 @@ my-study/
 - 알고리즘 문제 풀이를 통해 문제 해결 능력 기르기
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
 - 시맨틱 마크업과 반응형 CSS를 익히고 상태를 저장하는 동적 웹 페이지 구현하기
+- Node.js의 실행 환경과 명령줄 입력 및 내장 모듈 사용법 익히기
 - SQL 조인과 집계 함수를 조합해 여러 테이블의 데이터를 그룹별로 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
