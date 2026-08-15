@@ -10,5 +10,13 @@ add.addEventListener("click", () => {
         item.innerText = willTask.value;
         todoList.appendChild(item);
         willTask.value = "";
+
+        const deleteButton = document.createElement("button");
+        deleteButton.innerText = "삭제";
+        item.appendChild(deleteButton);
+
+        deleteButton.addEventListener("click", () => {
+            item.remove();
+        });
     }
 });
