@@ -9,14 +9,14 @@
 | C | 기본 입출력, 산술 연산, 조건문, 백준 문제 풀이 |
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
 | Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자, 캡슐화 |
-| Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 로컬 저장소 |
-| Backend | Node.js 실행, 명령줄 인자, 입력값 검증, 내장 모듈 |
+| Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 동적 목록 |
+| Backend | Node.js 실행, 파일 시스템, 모듈, npm |
 | Database | SQL 조회, CRUD, 집계와 그룹화, 내부·외부 조인 |
 
 ## 최근 학습
 
-- [Node.js 기초](Backend/NodeJS/01_basics.js): 명령줄 인자를 검증해 인사와 숫자 합계를 출력하고 `os` 모듈로 시스템 정보를 확인했습니다.
-- [SQL LEFT JOIN 복습](Database/SQL/09_LeftJoinReview.sql): 모든 전공을 기준으로 학생 수와 평균 점수를 집계했습니다.
+- [Node.js 파일·모듈·npm 실습](Backend/NodeJS/02_FileSystem.js): 파일을 읽고 쓰며, 사용자 모듈과 npm 패키지를 사용했습니다.
+- [동적 할 일 카드](Frontend/12_todo_card/index.html): 입력한 할 일을 DOM으로 추가하고 각 항목을 삭제하는 기능을 구현했습니다.
 
 ## 저장소 구조
 
@@ -62,6 +62,7 @@ my-study/
 | `Java09Encapsulation.java` | `private` 필드와 getter·setter를 사용한 캡슐화 및 점수 검증 |
 | `Java10BankAccount.java` | 캡슐화된 은행 계좌 객체의 소유자 검증과 입금·출금 구현하기 |
 | `Java11StudentScore.java` | getter·setter로 학생 정보를 조회하고 0~100 범위의 점수만 반영하기 |
+| `Java12Book.java` | 캡슐화된 도서 객체의 제목·가격 관리와 가격 검증하기 |
 
 ## Frontend
 
@@ -78,6 +79,7 @@ my-study/
 | `09_custom_study_timer/` | 입력값 검증, Enter 키 입력과 `localStorage` 저장을 지원하는 사용자 지정 타이머 |
 | `10_profile_card/` | 시맨틱 HTML, Flexbox와 미디어 쿼리를 활용한 반응형 프로필 카드 |
 | `11_status_card/` | 버튼으로 학습 상태를 변경하고 `localStorage`에 저장하는 반응형 상태 카드 |
+| `12_todo_card/` | 입력한 할 일을 DOM 목록에 추가하고 삭제하는 동적 카드 |
 
 프론트엔드 예제는 해당 HTML 파일을 브라우저에서 열어 실행할 수 있습니다.
 
@@ -86,6 +88,10 @@ my-study/
 | 파일 | 학습 주제 |
 | --- | --- |
 | `01_basics.js` | Node.js 출력, 명령줄 인자 처리, 숫자 검증과 `os` 내장 모듈 사용하기 |
+| `02_FileSystem.js` | `fs` 모듈로 파일 생성·읽기·추가·덮어쓰기하기 |
+| `03_Module/app.js` | 사용자 모듈을 불러와 계산 함수 사용하기 |
+| `03_Module/calculator.js` | `module.exports`로 더하기·빼기 함수 내보내기 |
+| `04_NPM/index.js` | npm 프로젝트와 `express` 패키지 사용 시작하기 |
 
 ## Database
 
@@ -100,14 +106,15 @@ my-study/
 | `07_LeftJoin.sql` | `LEFT JOIN`으로 학생이 없는 전공까지 조회하고 전공별 학생 수 집계하기 |
 | `08_JoinAggregateReview.sql` | `LEFT JOIN`, `GROUP BY`, `HAVING`으로 전공별 학생 수와 평균 점수 분석하기 |
 | `09_LeftJoinReview.sql` | 모든 전공을 기준으로 학생 수와 평균 점수 집계하기 |
+| `10_LeftJoinPractice.sql` | 모든 부서를 기준으로 직원 수를 `LEFT JOIN`과 `GROUP BY`로 집계하기 |
 
 ## 학습 목표
 
 - C와 Python의 기본 문법 및 Java 클래스·객체·캡슐화 익히기
 - 알고리즘 문제 풀이를 통해 문제 해결 능력 기르기
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
-- 시맨틱 마크업과 반응형 CSS를 익히고 상태를 저장하는 동적 웹 페이지 구현하기
-- Node.js의 실행 환경과 명령줄 입력 및 내장 모듈 사용법 익히기
+- 시맨틱 마크업과 반응형 CSS를 익히고 DOM 기반의 동적 웹 페이지 구현하기
+- Node.js의 파일 시스템, 모듈, npm 생태계 기초 익히기
 - SQL 조인과 집계 함수를 조합해 여러 테이블의 데이터를 그룹별로 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
