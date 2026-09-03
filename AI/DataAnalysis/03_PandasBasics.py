@@ -13,6 +13,6 @@ print(df["score"])
 
 print(df[df["score"] >= 80])
 
-print(df.loc[df["score"] >= 80, ["name, score"]])
+print(df.loc[df["score"] >= 80, ["name", "score"]])
 
 print(df.iloc[1])
