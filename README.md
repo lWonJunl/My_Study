@@ -8,15 +8,16 @@
 | --- | --- |
 | C | 기본 입출력, 산술 연산, 조건문, 백준 문제 풀이 |
 | Python | 기본 입출력, 조건문, 반복문, 문자열 처리, 백준 문제 풀이 |
-| Java | 기본 문법, 배열, 메서드, 클래스, 객체, 생성자, 캡슐화 |
+| Java | 기본 문법, 객체 지향, 상속, 다형성, 추상화, 인터페이스, 예외 처리 |
 | Frontend | 시맨틱 HTML, 반응형 CSS, JavaScript, DOM, 이벤트, 동적 목록 |
-| Backend | Node.js 실행, 파일 시스템, 모듈, npm |
-| Database | SQL 조회, CRUD, 집계와 그룹화, 내부·외부 조인 |
+| Backend | Node.js 파일·모듈, npm, Express 라우팅과 요청 검증 |
+| AI/Data Analysis | NumPy·pandas를 활용한 데이터 처리와 결측치 분석 |
+| Database | SQL 조회, CRUD, 집계, 서브쿼리, 제약조건, 조인 |
 
 ## 최근 학습
 
-- [Node.js 파일·모듈·npm 실습](Backend/NodeJS/02_FileSystem.js): 파일을 읽고 쓰며, 사용자 모듈과 npm 패키지를 사용했습니다.
-- [동적 할 일 카드](Frontend/12_todo_card/index.html): 입력한 할 일을 DOM으로 추가하고 각 항목을 삭제하는 기능을 구현했습니다.
+- [Java 예외 처리](Programming/Java/Java19Exception.java): `try-catch-finally`로 산술 예외를 처리했습니다.
+- [SQL 테이블 변경](Database/SQL/17_AlterTable.sql): `ALTER TABLE`로 열을 추가·삭제하고 테이블을 삭제했습니다.
 
 ## 저장소 구조
 
@@ -29,6 +30,8 @@ my-study/
 ├── Frontend/       # HTML, CSS, JavaScript 실습
 ├── Backend/
 │   └── NodeJS/     # Node.js 기초 실습
+├── AI/
+│   └── DataAnalysis/ # NumPy·pandas 데이터 분석
 ├── Database/
 │   └── SQL/        # SQL 기초 실습
 └── README.md
@@ -63,6 +66,13 @@ my-study/
 | `Java10BankAccount.java` | 캡슐화된 은행 계좌 객체의 소유자 검증과 입금·출금 구현하기 |
 | `Java11StudentScore.java` | getter·setter로 학생 정보를 조회하고 0~100 범위의 점수만 반영하기 |
 | `Java12Book.java` | 캡슐화된 도서 객체의 제목·가격 관리와 가격 검증하기 |
+| `Java13Inheritance.java` | 상속으로 부모·자식 클래스 관계 구현하기 |
+| `Java14Super.java` | `super`로 부모 클래스 생성자와 멤버 사용하기 |
+| `Java15Polymorphism.java` | 다형성으로 같은 타입에서 다양한 객체 동작하기 |
+| `Java16Casting.java` | 업캐스팅·다운캐스팅과 타입 확인하기 |
+| `Java17Abstract.java` | 추상 클래스와 추상 메서드 구현하기 |
+| `Java18Interface.java` | 인터페이스를 구현해 공통 동작 정의하기 |
+| `Java19Exception.java` | `try-catch-finally`로 예외 처리하기 |
 
 ## Frontend
 
@@ -92,6 +102,20 @@ my-study/
 | `03_Module/app.js` | 사용자 모듈을 불러와 계산 함수 사용하기 |
 | `03_Module/calculator.js` | `module.exports`로 더하기·빼기 함수 내보내기 |
 | `04_NPM/index.js` | npm 프로젝트와 `express` 패키지 사용 시작하기 |
+| `05_Express.js` | Express 서버와 기본 라우트 만들기 |
+| `06_ExpressParams.js` | URL 경로 파라미터 처리하기 |
+| `07_ExpressQuery.js` | 쿼리 문자열 읽기 |
+| `08_ExpressPost.js` | POST 요청과 JSON 본문 처리하기 |
+| `09_ExpressValidation.js` | 요청 데이터 검증과 HTTP 상태 코드 응답하기 |
+
+## AI/Data Analysis
+
+| 파일 | 학습 주제 |
+| --- | --- |
+| `01_NumPyBasics.py` | NumPy 배열 생성과 기본 속성 확인하기 |
+| `02_NumPyOperations.py` | NumPy 배열 연산과 집계하기 |
+| `03_PandasBasics.py` | pandas DataFrame과 CSV 데이터 다루기 |
+| `04_PandasMissingValues.py` | 결측치 확인·대체와 조건 필터링하기 |
 
 ## Database
 
@@ -107,6 +131,13 @@ my-study/
 | `08_JoinAggregateReview.sql` | `LEFT JOIN`, `GROUP BY`, `HAVING`으로 전공별 학생 수와 평균 점수 분석하기 |
 | `09_LeftJoinReview.sql` | 모든 전공을 기준으로 학생 수와 평균 점수 집계하기 |
 | `10_LeftJoinPractice.sql` | 모든 부서를 기준으로 직원 수를 `LEFT JOIN`과 `GROUP BY`로 집계하기 |
+| `11_LeftJoinAggregateReview.sql` | `LEFT JOIN`과 집계 함수 복습하기 |
+| `12_Subquery.sql` | 조건문 안에 서브쿼리 사용하기 |
+| `13_FromSubquery.sql` | `FROM` 절의 서브쿼리로 조회 결과 재사용하기 |
+| `14_CorrelatedSubquery.sql` | 외부 행과 연결된 상관 서브쿼리 작성하기 |
+| `15_CreateTable.sql` | 테이블 생성과 기본 제약조건 정의하기 |
+| `16_ForeignKey.sql` | 외래 키로 테이블 간 관계 설정하기 |
+| `17_AlterTable.sql` | `ALTER TABLE`로 열과 테이블 구조 변경하기 |
 
 ## 학습 목표
 
@@ -115,7 +146,9 @@ my-study/
 - HTML, CSS, JavaScript의 역할과 상호작용 이해하기
 - 시맨틱 마크업과 반응형 CSS를 익히고 DOM 기반의 동적 웹 페이지 구현하기
 - Node.js의 파일 시스템, 모듈, npm 생태계 기초 익히기
-- SQL 조인과 집계 함수를 조합해 여러 테이블의 데이터를 그룹별로 분석하기
+- Express 요청·응답과 입력값 검증으로 간단한 API 만들기
+- NumPy와 pandas로 데이터를 정리하고 결측치 처리하기
+- SQL 서브쿼리와 제약조건, 조인·집계로 데이터 구조와 관계 분석하기
 - 학습 과정과 결과물을 꾸준히 기록하기
 
 > 학습 내용이 늘어날 때마다 예제와 문서를 함께 업데이트합니다.
